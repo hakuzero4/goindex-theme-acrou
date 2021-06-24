@@ -1,6 +1,8 @@
 <template>
   <div>
     <Head></Head>
+
+<!--    <Aria></Aria>-->
     <section class="section">
       <div class="container">
         <feb-alive>
@@ -17,6 +19,7 @@
 import Head from "./common/Head";
 import Footer from "./common/Footer";
 import APlayer from "./common/APlayer";
+
 export default {
   data: function () {
     return {};

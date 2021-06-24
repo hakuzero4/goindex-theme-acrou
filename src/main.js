@@ -1,9 +1,10 @@
 import Vue from "vue";
 import App from "./App.vue";
-import { Loading } from "element-ui";
+import { Loading, Progress, Card } from "element-ui";
 import "element-ui/lib/theme-chalk/icon.css";
 import "element-ui/lib/theme-chalk/notification.css";
 import "element-ui/lib/theme-chalk/loading.css";
+import "element-ui/lib/theme-chalk/index.css";
 import axios from "@/plugin/axios";
 import VueAxios from "vue-axios";
 import router from "./router";
@@ -22,6 +23,8 @@ import "@/assets/style/theme/register.scss";
 Vue.config.productionTip = false;
 Vue.prototype.$cdnpath = cdnpath;
 Vue.use(Loading);
+Vue.use(Progress);
+Vue.use(Card);
 Vue.use(VueAxios, axios);
 Vue.use(Clipboard);
 Vue.use(VueLazyload, {
