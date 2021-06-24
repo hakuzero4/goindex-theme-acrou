@@ -26,6 +26,7 @@ class BuildAppJSPlugin {
             } else {
               filename = "/" + filename;
             }
+            console.log(filename)
             jsarr.push(filename);
           }
           if (filename.match(reg + ".*\\.css$")) {
